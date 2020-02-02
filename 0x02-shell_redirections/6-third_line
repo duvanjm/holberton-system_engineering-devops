@@ -1,2 +1,2 @@
 #!/bin/bash
-head -n3 itaca 
+head -3 itaca 
