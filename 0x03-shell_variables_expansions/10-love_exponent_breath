@@ -1,2 +1,2 @@
-#!/bin/bash
-$((BREATH ** LOVE))
+#!/bin/bash 
+echo $((BREATH ** LOVE))
