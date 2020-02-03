@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $TRUEKNOWLEDGE $TRUEKNOWLEDGE=+128 | "\n"
+$TRUEKNOWLEDGE $TRUEKNOWLEDGE=+128 | echo "\n"
