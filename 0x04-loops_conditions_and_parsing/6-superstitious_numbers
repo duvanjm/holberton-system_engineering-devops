@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#change the 4 and 8 position
+
+COUNT=0
+while [ $COUNT -lt 21 ]; do
+    echo $COUNT
+    case $COUNT in
+        4) echo "bad luck from China"
+                ;;
+        9) echo "bad luck from Japan"
+                ;;
+        17) echo "bad luck from Italy"
+                ;;
+    esac
+    ((COUNT++))
+done
