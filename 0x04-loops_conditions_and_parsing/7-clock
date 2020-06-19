@@ -9,6 +9,5 @@ while [ $MIN -lt 60 ]; do
         echo $MIN
         ((MIN++))
     done
-    ((MIN++))
     ((HOURS++))
 done
