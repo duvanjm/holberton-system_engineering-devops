@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#print Holberton School 10 times 
+
+COUNT=0
+while [ $COUNT -lt 10 ]; do
+    echo "Holberton School"
+    ((COUNT++))
+done;
