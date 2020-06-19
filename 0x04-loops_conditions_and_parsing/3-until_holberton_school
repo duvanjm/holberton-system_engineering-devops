@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#print Holberton School 10 times
+
+CONTADOR=0
+until ((CONTADOR>=10))
+do
+    echo "Holberton School"
+    let CONTADOR+=1
+done
