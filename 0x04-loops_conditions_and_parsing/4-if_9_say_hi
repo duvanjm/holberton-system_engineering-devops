@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#
+#change the 9 position for Hi
 
 COUNT=0
 while [ $COUNT -lt 10 ]; do
