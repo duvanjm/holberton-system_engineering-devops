@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #change the 4 and 8 position
 
-COUNT=0
+COUNT=1
 while [ $COUNT -lt 21 ]; do
     echo $COUNT
     case $COUNT in
