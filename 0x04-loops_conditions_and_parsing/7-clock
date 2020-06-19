@@ -4,7 +4,7 @@
 HOURS=0
 while [ $HOURS -lt 13 ]; do
         echo Hour: $HOURS
-MIN=0
+MIN=1
 while [ $MIN -lt 60 ]; do
         echo $MIN
         ((MIN++))
