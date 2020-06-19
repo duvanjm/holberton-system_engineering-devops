@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#
+
+COUNT=0
+while [ $COUNT -lt 10 ]; do
+    echo "Holberton School"
+    if [ $COUNT -eq 8 ]; then
+        echo "Hi"
+    fi
+    ((COUNT++))
+done
