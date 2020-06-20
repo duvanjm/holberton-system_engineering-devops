@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#remove all -
+
+VAR=$(ls)
+for i in $VAR; do
+   echo "$i" | cut -d "-" -f2-
+done
