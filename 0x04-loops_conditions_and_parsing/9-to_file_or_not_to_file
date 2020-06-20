@@ -4,7 +4,7 @@
 file="holbertonschool"
 if [ -e $file  ]; then
     echo "holbertonschool file exists"
-    if [ -s $file]; then
+    if [ -s $file ]; then
         echo "holbertonschool file is not empty"
     else
         echo "holbertonschool file is empty"
