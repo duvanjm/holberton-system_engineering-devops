@@ -3,11 +3,11 @@
 
 file=/var/run/holbertonscript.pid
 echo $$ > "$file"
-trap 'echo "I hate the kill command"; sudo rm /var/run/holbertonscript.pid; exit' SIGTERM
-trap 'echo "Y U no love me?!"' SIGINT
-trap 'sudo rm /var/run/holbertonscript.pid; exit' SIGTERM
 
 while (true); do
+    trap 'echo "I hate the kill command"; sudo rm /var/run/holbertonscript.pid; exit' SIGTERM
+    trap 'echo "Y U no love me?!"' SIGINT
+    trap 'sudo rm /var/run/holbertonscript.pid; exit' SIGQUIT
     echo "To infinity and beyond"
     sleep 2
 done
