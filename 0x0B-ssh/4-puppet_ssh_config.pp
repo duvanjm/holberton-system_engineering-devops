@@ -11,4 +11,3 @@ file_line {'PassworAuthentication':
     path    => '/etc/ssh/ssh_config',
     line    => 'PasswordAuthetication no',
 }
-
