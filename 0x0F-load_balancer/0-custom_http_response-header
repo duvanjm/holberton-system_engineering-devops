@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-# response contains a custom header (on web-01 and web-02)
 
 sudo apt-get update
-sudo apt-get install -y nginx
-sed -i "30 i \\\n\tadd_header X-Served-By $HOSTNAME;\n" \
-    /etc/nginx/sites-available/default
-service nginx restart
+sudo apt-get -y install nginx
+sudo service nginx start
+echo "Holberton School" > /var/www/html/index.html
+otherdefault="/etc/nginx/sites-enabled/default"
+location="\\\tadd_header X-Served-By \$hostname;"
+sudo sed -i "30i $location" "$otherdefault"
+sudo service nginx restart
