@@ -11,7 +11,7 @@ sed -i "6 i \\\nENABLED=1\n" /etc/default/haproxy
 sed -i "\$a\
 listen backend *:80\n\
 \tmode http\n\tbalance roundrobin\n\
-\tserver 123-web-01 66.70.187.105:80 check\n\
-\tserver 123-web-02 142.44.164.125:80 check\n" \
+\tserver 1503-web-01 104.196.204.4:80 check\n\
+\tserver 1503-web-02 35.231.4.186:80 check\n" \
 /etc/haproxy/haproxy.cfg
 sudo service haproxy start
