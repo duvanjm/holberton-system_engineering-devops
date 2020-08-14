@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#response contains a custom header (on web-01 and web-02)
 
 sudo apt-get update
 sudo apt-get -y install nginx
