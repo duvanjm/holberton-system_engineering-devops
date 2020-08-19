@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#display information about subdomains
+
+all=("www" "lb-01" "web-01" "web-02")
+func () {
+    dig "$sub.$domain" | grep -A1 ';; ANSWER SECTION:' | grep -v 'ANSWER' | awk -v awksub="$sub" '{printf "The sub %s is a %s record and points to %s\n", awksub, $4, $5}'
+}
+
+if [ $# -eq 1 ]
+then 
+    for a in "${all[@]}"
+    do
+	domain="$1"
+	sub="$a"
+	func "$a" "$1"
+    done
+elif [ $# -eq 2 ]; then
+    domain="$1"
+    sub="$2"
+    func "$2" "$1"
+fi
