@@ -37,6 +37,7 @@ defaults
 frontend front_server
         bind *:80
         bind *:443 ssl crt /etc/haproxy/certs/www.poject393.tech.pem
+        redirect scheme https code 301 if !{ ssl_fc }
         default_backend back_servers
  
 backend back_servers
