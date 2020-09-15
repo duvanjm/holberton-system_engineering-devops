@@ -9,18 +9,14 @@ import json
 
 
 def _request(val, task):
-    """
-    makes employee request and returns json dict response
-    """
+    """reques for user"""
     url = 'https://jsonplaceholder.typicode.com'
     info = '{}{}{}'.format(url, val, task)
     return requests.get(info).json()
 
 
 def user_(task):
-    """
-    makes request for info about employee todo list, then prints
-    """
+    """reques for user"""
     user = _request('/users/', task)
     todo = _request('/todos/?userId=', task)
     done = [i.get('title') for i in todo if i.get('completed')]
