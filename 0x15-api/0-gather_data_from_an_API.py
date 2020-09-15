@@ -13,7 +13,7 @@ def _request(val, task):
     """
     makes employee request and returns json dict response
     """
-    url = 'https://jsonplaceholder.typicode.com'
+    url = 'https://jsonplaceholder.typicode.com/'
     info = '{}{}{}'.format(url, val, task)
     return requests.get(info).json()
 
