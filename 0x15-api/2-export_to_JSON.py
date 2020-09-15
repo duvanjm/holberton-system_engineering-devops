@@ -31,6 +31,7 @@ def user_(task):
     with open(filename, 'w') as f:
         f.write(json.dumps(data))
 
+
 if __name__ == '__main__':
     """main"""
     if len(sys.argv) > 1 and sys.argv[1].isdigit():
