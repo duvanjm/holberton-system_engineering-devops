@@ -3,8 +3,8 @@
 """Write a Python script that, using this
 REST API, for a given employee ID"""
 
-import requests
 import json
+import requests
 
 
 if __name__ == "__main__":
